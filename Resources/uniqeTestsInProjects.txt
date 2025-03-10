@@ -1,0 +1,1 @@
+select p.name as project, count(distinct(t.name)) as unique_tests from test t join project p on t.project_id = p.id group by project;

@@ -1,0 +1,1 @@
+with tbl as (select t.id, p.name as project, t.name as test, (end_time-start_time) as min_time_sec from test t join project p on t.project_id = p.id where end_time is not null) select project, test, min(min_time_sec) as min_time from tbl group by project, test order by project, test;

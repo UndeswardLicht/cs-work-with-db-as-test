@@ -1,0 +1,1 @@
+select p.name as project, t.name as test, start_time from test t join project p on t.project_id = p.id where start_time > '' order by project, test;
