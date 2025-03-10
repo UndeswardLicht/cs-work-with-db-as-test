@@ -1,6 +1,4 @@
 ﻿using System.Data;
-using System.Text;
-using System.Text.RegularExpressions;
 using MySql.Data.MySqlClient;
 using NUnit.Framework.Legacy;
 using SQLQueries_Test.Utilities;
